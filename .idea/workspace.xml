@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Savour the Flavour of Health.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Savour the Flavour of Health.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainProgramme/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainProgramme/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -36,6 +41,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.AuthenticationTest.testLogin.executor": "Run",
     "JUnit.AuthenticationTest.testLoginWithCorrectCredentials.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -54,7 +60,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.AuthenticationTest.testLogin">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainProgramme.Main" />
       <module name="Savour the Flavour of Health" />
@@ -102,9 +108,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.AuthenticationTest.testLogin" />
         <item itemvalue="JUnit.AuthenticationTest.testLoginWithCorrectCredentials" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -116,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1742570036453</updated>
-      <workItem from="1742570037601" duration="2224000" />
+      <workItem from="1742570037601" duration="4581000" />
     </task>
     <servers />
   </component>
@@ -130,6 +136,11 @@
           <url>file://$PROJECT_DIR$/src/MainProgramme/Main.java</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MainProgramme/Main.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

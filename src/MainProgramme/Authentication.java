@@ -12,7 +12,7 @@ public class Authentication {
                     return true;
                 }}
         } catch (IOException e) {
-            System.out.println("Error reading user database.");}
+            System.out.println("Error reading user .");}
         return false;}
     public boolean register(String username, String password) {
         if (userExists(username)) {
