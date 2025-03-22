@@ -1,9 +1,11 @@
 
+
 package MainProgramme;
 
-
-
 import java.util.Scanner;
+import Authentication.LoginPanel;
+import Authentication.Authentication;
+import Calculation.BMIBMRcalculator;
 
 public class ServiceHandler {
     private Authentication auth = new Authentication();
@@ -35,7 +37,9 @@ public class ServiceHandler {
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     pause();
-            }}}
+            }
+        }
+    }
 
     private void handleIndividualService() {
         while (true) {
@@ -58,7 +62,9 @@ public class ServiceHandler {
             } else {
                 System.out.println("Invalid choice. Please try again.");
                 pause();
-            }}}
+            }
+        }
+    }
 
     private void registerUser() {
         clearScreen();
@@ -70,8 +76,10 @@ public class ServiceHandler {
         if (auth.register(username, password)) {
             System.out.println("Registration successful!");
         } else {
-            System.out.println("User already exists.");}
-        pause();}
+            System.out.println("User already exists.");
+        }
+        pause();
+    }
 
     private void loginUser() {
         clearScreen();
@@ -82,10 +90,14 @@ public class ServiceHandler {
 
         if (auth.login(username, password)) {
             System.out.println("Login successful!");
+
+            LoginPanel loginPanel = new LoginPanel(username);
+            loginPanel.showPanel();
+
         } else {
             System.out.println("Invalid credentials.");
         }
-        pause();
+
     }
 
     private void handleGeneralService() {
@@ -109,7 +121,9 @@ public class ServiceHandler {
                 default:
                     System.out.println("Invalid choice. Please try again.");
                     pause();
-            }}}
+            }
+        }
+    }
 
     private void calculateBMIAndBMR() {
         clearScreen();
@@ -132,16 +146,14 @@ public class ServiceHandler {
         pause();
     }
 
-
-   private void clearScreen() {
+    public  void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
 
-    private void pause() {
+    public void pause() {
         System.out.println("\nPress Enter to continue...");
         scanner.nextLine();
     }
-
-
 }
+

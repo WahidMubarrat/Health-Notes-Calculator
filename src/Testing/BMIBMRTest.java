@@ -1,5 +1,5 @@
 package Testing;
-import MainProgramme.BMIBMRcalculator;
+import Calculation.BMIBMRcalculator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

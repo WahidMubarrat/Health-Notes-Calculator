@@ -1,4 +1,4 @@
-package MainProgramme;
+package Calculation;
 public class BMIBMRcalculator {
         private double weight;
         private double height;

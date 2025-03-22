@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Authentication/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/BMIBMRcalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/BMIBMRcalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/ServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainProgramme/ServiceHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/AuthenticationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/AuthenticationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Testing/BMIBMRTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing/BMIBMRTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,7 @@
     "JUnit.AuthenticationTest.testLogin.executor": "Run",
     "JUnit.AuthenticationTest.testLoginWithCorrectCredentials.executor": "Run",
     "JUnit.BMIBMRTest.testBMICalculation.executor": "Run",
+    "JUnit.BMIBMRTest.testBMRCalculation.executor": "Run",
     "JUnit.BMIBMRTest.testBMRECalculation.executor": "Run",
     "JUnit.BMIBMRTest.testBMREnergyExpenditureCalculation.executor": "Run",
     "JUnit.BMIBMRTest.testInvalidGender.executor": "Run",
@@ -61,19 +68,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.BMIBMRTest.testBMRCalculation">
-    <configuration name="BMIBMRTest.testBMICalculation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainProgramme.Main" />
       <module name="Savour the Flavour of Health" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Testing.*" />
+          <option name="PATTERN" value="Authentication.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Testing" />
-      <option name="MAIN_CLASS_NAME" value="Testing.BMIBMRTest" />
-      <option name="METHOD_NAME" value="testBMICalculation" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.BMIBMRTest.testBMRCalculation" />
         <item itemvalue="JUnit.BMIBMRTest.testBMRECalculation" />
         <item itemvalue="JUnit.BMIBMRTest.testBMREnergyExpenditureCalculation" />
         <item itemvalue="JUnit.BMIBMRTest.testInvalidGender" />
-        <item itemvalue="JUnit.BMIBMRTest.testBMICalculation" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +165,7 @@
       <option name="presentableId" value="Default" />
       <updated>1742570036453</updated>
       <workItem from="1742570037601" duration="8368000" />
-      <workItem from="1742637804185" duration="3240000" />
+      <workItem from="1742637804185" duration="8659000" />
     </task>
     <servers />
   </component>
@@ -181,14 +185,10 @@
           <line>8</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Testing/BMIBMRTest.java</url>
-          <line>18</line>
-          <properties class="Testing.BMIBMRTest" method="testBMRECalculation">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="3" />
+          <line>17</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
