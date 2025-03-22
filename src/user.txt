@@ -3,3 +3,9 @@ User,User
 guddu,guddu
 wsx,wsx
 niru,niru
+gdd,gdd
+mnn,mnn
+a,
+swe,swe
+register,login
+bdboy,bdboy

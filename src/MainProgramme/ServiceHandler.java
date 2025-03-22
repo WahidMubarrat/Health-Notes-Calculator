@@ -1,4 +1,6 @@
+
 package MainProgramme;
+
 
 
 import java.util.Scanner;
@@ -9,9 +11,10 @@ public class ServiceHandler {
 
     public void start() {
         while (true) {
-            System.out.println("Welcome to Savour the Flavor of Life!\n Choose an option:");
-            System.out.println("1.  Individual Service");
-            System.out.println("2.  General Service");
+            clearScreen();
+            System.out.println("Welcome to Savour the Flavor of Life!\nChoose an option:");
+            System.out.println("1. Individual Service");
+            System.out.println("2. General Service");
             System.out.println("3. Exit");
 
             System.out.print("Enter your choice: ");
@@ -31,10 +34,12 @@ public class ServiceHandler {
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
-            }}  }
+                    pause();
+            }}}
 
     private void handleIndividualService() {
         while (true) {
+            clearScreen();
             System.out.println("Individual Services - Choose an option:");
             System.out.println("1. Register");
             System.out.println("2. Login");
@@ -45,40 +50,53 @@ public class ServiceHandler {
             scanner.nextLine();
 
             if (indivChoice == 1) {
-                System.out.print("Enter username: ");
-                String username = scanner.nextLine();
-                System.out.print("Enter password: ");
-                String password = scanner.nextLine();
-                if (auth.register(username, password)) {
-                    System.out.println("Registration successful!");
-                } else {
-                    System.out.println("User already exists.");
-                }
+                registerUser();
             } else if (indivChoice == 2) {
-                System.out.print("Enter username: ");
-                String username = scanner.nextLine();
-                System.out.print("Enter password: ");
-                String password = scanner.nextLine();
-                if (auth.login(username, password)) {
-                    System.out.println("Login successful!");
-                } else {
-                    System.out.println("Invalid credentials.");
-                }
+                loginUser();
             } else if (indivChoice == 3) {
-                break;
+                return;
             } else {
                 System.out.println("Invalid choice. Please try again.");
+                pause();
             }}}
+
+    private void registerUser() {
+        clearScreen();
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
+
+        if (auth.register(username, password)) {
+            System.out.println("Registration successful!");
+        } else {
+            System.out.println("User already exists.");}
+        pause();}
+
+    private void loginUser() {
+        clearScreen();
+        System.out.print("Enter username: ");
+        String username = scanner.nextLine();
+        System.out.print("Enter password: ");
+        String password = scanner.nextLine();
+
+        if (auth.login(username, password)) {
+            System.out.println("Login successful!");
+        } else {
+            System.out.println("Invalid credentials.");
+        }
+        pause();
+    }
 
     private void handleGeneralService() {
         while (true) {
+            clearScreen();
             System.out.println("Welcome to General Services!");
             System.out.println("Choose an option:");
-
             System.out.println("1. Calculate BMI and BMR");
             System.out.println("2. Back to Main Menu");
 
-            System.out.print("Enter your choice (e.g 1,2): ");
+            System.out.print("Enter your choice: ");
             int generalChoice = scanner.nextInt();
             scanner.nextLine();
 
@@ -90,9 +108,11 @@ public class ServiceHandler {
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
+                    pause();
             }}}
 
     private void calculateBMIAndBMR() {
+        clearScreen();
         System.out.print("Enter your weight (kg): ");
         double weight = scanner.nextDouble();
         System.out.print("Enter your height (m): ");
@@ -107,6 +127,21 @@ public class ServiceHandler {
         double bmi = calculator.calculateBMI();
         double bmr = calculator.calculateBMR();
 
-        System.out.println("Your BMI is: " + bmi);
+        System.out.println("\nYour BMI is: " + bmi);
         System.out.println("Your BMR is: " + bmr);
-    }}
+        pause();
+    }
+
+
+   private void clearScreen() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
+    private void pause() {
+        System.out.println("\nPress Enter to continue...");
+        scanner.nextLine();
+    }
+
+
+}
