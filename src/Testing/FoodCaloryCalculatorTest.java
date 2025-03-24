@@ -18,7 +18,7 @@ public class FoodCaloryCalculatorTest {
 
     @Test
     public void testFoodItemNotFound() {
-        String foodItem = "Pizza";
+        String foodItem = "Pizza"; // food not on the list
         double quantity = 100.0;
 
         double calories = calc.calculateCalories(foodItem, quantity);
