@@ -1,15 +1,17 @@
 
 
+
 package MainProgramme;
 
+import Authentication.GeneralPanel;
 import java.util.Scanner;
 import Authentication.LoginPanel;
 import Authentication.Authentication;
-import Calculation.BMIBMRcalculator;
 
 public class ServiceHandler {
     private Authentication auth = new Authentication();
     private Scanner scanner = new Scanner(System.in);
+    private GeneralPanel generalPanel = new GeneralPanel();
 
     public void start() {
         while (true) {
@@ -28,7 +30,7 @@ public class ServiceHandler {
                     handleIndividualService();
                     break;
                 case 2:
-                    handleGeneralService();
+                    generalPanel.showGeneralServices();
                     break;
                 case 3:
                     System.out.println("Exiting... Goodbye!");
@@ -90,70 +92,20 @@ public class ServiceHandler {
 
         if (auth.login(username, password)) {
             System.out.println("Login successful!");
-
             LoginPanel loginPanel = new LoginPanel(username);
             loginPanel.showPanel();
-
         } else {
             System.out.println("Invalid credentials.");
         }
-
     }
 
-    private void handleGeneralService() {
-        while (true) {
-            clearScreen();
-            System.out.println("Welcome to General Services!");
-            System.out.println("Choose an option:");
-            System.out.println("1. Calculate BMI and BMR");
-            System.out.println("2. Back to Main Menu");
-
-            System.out.print("Enter your choice: ");
-            int generalChoice = scanner.nextInt();
-            scanner.nextLine();
-
-            switch (generalChoice) {
-                case 1:
-                    calculateBMIAndBMR();
-                    break;
-                case 2:
-                    return;
-                default:
-                    System.out.println("Invalid choice. Please try again.");
-                    pause();
-            }
-        }
-    }
-
-    private void calculateBMIAndBMR() {
-        clearScreen();
-        System.out.print("Enter your weight (kg): ");
-        double weight = scanner.nextDouble();
-        System.out.print("Enter your height (m): ");
-        double height = scanner.nextDouble();
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
-        System.out.print("Enter your gender (male/female): ");
-        String gender = scanner.nextLine();
-
-        BMIBMRcalculator calculator = new BMIBMRcalculator(weight, height, age, gender);
-        double bmi = calculator.calculateBMI();
-        double bmr = calculator.calculateBMR();
-
-        System.out.println("\nYour BMI is: " + bmi);
-        System.out.println("Your BMR is: " + bmr);
-        pause();
-    }
-
-    public  void clearScreen() {
+    private void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
     }
 
-    public void pause() {
+    private void pause() {
         System.out.println("\nPress Enter to continue...");
         scanner.nextLine();
     }
 }
-

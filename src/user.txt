@@ -6,3 +6,5 @@ niru,niru
 gdd,gdd
 mnn,mnn
 qaz,qaz
+king,kimg
+guru,guru
