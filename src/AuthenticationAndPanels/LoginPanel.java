@@ -1,9 +1,7 @@
-package Authentication;
+package AuthenticationAndPanels;
 import java.util.Scanner;
 
 
-
-import java.util.Scanner;
 import Calculation.SleepTracker;
 public class LoginPanel {
     private Scanner scanner = new Scanner(System.in);

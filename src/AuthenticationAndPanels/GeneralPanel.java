@@ -1,4 +1,4 @@
-package Authentication;
+package AuthenticationAndPanels;
 
 import java.util.Scanner;
 import Calculation.BMIBMRcalculator;

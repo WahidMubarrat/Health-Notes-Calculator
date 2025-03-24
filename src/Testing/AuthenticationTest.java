@@ -1,5 +1,5 @@
 package Testing;
-import Authentication.Authentication;
+import AuthenticationAndPanels.Authentication;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

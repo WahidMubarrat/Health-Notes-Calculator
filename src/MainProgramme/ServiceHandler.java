@@ -3,10 +3,10 @@
 
 package MainProgramme;
 
-import Authentication.GeneralPanel;
+import AuthenticationAndPanels.GeneralPanel;
 import java.util.Scanner;
-import Authentication.LoginPanel;
-import Authentication.Authentication;
+import AuthenticationAndPanels.LoginPanel;
+import AuthenticationAndPanels.Authentication;
 
 public class ServiceHandler {
     private Authentication auth = new Authentication();

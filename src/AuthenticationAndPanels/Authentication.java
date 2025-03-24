@@ -1,4 +1,4 @@
-package Authentication;
+package AuthenticationAndPanels;
 import java.io.*;
 
 public class Authentication {
