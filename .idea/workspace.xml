@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="" />
+    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/GeneralPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/GeneralPanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -67,7 +71,7 @@
       <module name="Savour the Flavour of Health" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Authentication.*" />
+          <option name="PATTERN" value="Calculation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -161,7 +165,7 @@
       <workItem from="1742637804185" duration="9658000" />
       <workItem from="1742766246091" duration="108000" />
       <workItem from="1742812490632" duration="19000" />
-      <workItem from="1742847088997" duration="950000" />
+      <workItem from="1742847088997" duration="2606000" />
     </task>
     <servers />
   </component>

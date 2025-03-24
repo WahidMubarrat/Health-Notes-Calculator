@@ -2,6 +2,7 @@ package AuthenticationAndPanels;
 
 import java.util.Scanner;
 import Calculation.BMIBMRcalculator;
+import Calculation.FoodCaloryCalculator;
 
 public class GeneralPanel {
     private Scanner scanner = new Scanner(System.in);
@@ -12,7 +13,8 @@ public class GeneralPanel {
             System.out.println("Welcome to General Services!");
             System.out.println("Choose an option:");
             System.out.println("1. Calculate BMI and BMR");
-            System.out.println("2. Back to Main Menu");
+            System.out.println("2. Calculate Food Calories");
+            System.out.println("3. Back to Main Menu");
 
             System.out.print("Enter your choice: ");
             int generalChoice = scanner.nextInt();
@@ -23,6 +25,9 @@ public class GeneralPanel {
                     calculateBMIAndBMR();
                     break;
                 case 2:
+                    calculateFoodCalories();
+                    break ;
+                case 3:
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
@@ -49,6 +54,22 @@ public class GeneralPanel {
 
         System.out.println("\nYour BMI is: " + bmi);
         System.out.println("Your BMR is: " + bmr);
+        pause();
+    }
+
+    private void calculateFoodCalories() {
+        clearScreen();
+        System.out.print("Enter the food item (e.g., 'White Rice'): ");
+        String foodItem = scanner.nextLine();
+        System.out.print("Enter the quantity in grams: ");
+        double quantityInGrams = scanner.nextDouble();
+
+        FoodCaloryCalculator foodCaloryCalculator = new FoodCaloryCalculator();
+        double calories = foodCaloryCalculator.calculateCalories(foodItem, quantityInGrams);
+
+        if (calories != -1) {
+            System.out.println("\nThe calories for " + quantityInGrams + " grams of " + foodItem + " is: " + calories + " kcal");
+        }
         pause();
     }
 

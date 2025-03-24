@@ -8,3 +8,4 @@ mnn,mnn
 qaz,qaz
 king,kimg
 guru,guru
+i,i
