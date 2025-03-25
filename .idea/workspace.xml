@@ -7,9 +7,7 @@
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculation/FoodCaloryCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/FoodCaloryCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sleep_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/sleep_duration.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/user.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,7 @@
       <workItem from="1742812490632" duration="19000" />
       <workItem from="1742847088997" duration="4074000" />
       <workItem from="1742899534485" duration="7000" />
-      <workItem from="1742900960571" duration="2303000" />
+      <workItem from="1742900960571" duration="6529000" />
     </task>
     <servers />
   </component>

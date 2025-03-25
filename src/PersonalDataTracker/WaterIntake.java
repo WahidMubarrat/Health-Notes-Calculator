@@ -10,7 +10,7 @@ import java.io.*;
 import java.time.LocalDate;
 
 public class WaterIntake {
-    private static final String FILENAME = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\water_intake.txt";
+    private static final String FILENAME1 = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\water_intake.txt";
     private String loggedInUser;
 
     public WaterIntake(String loggedInUser) {
@@ -21,7 +21,7 @@ public class WaterIntake {
         String date = LocalDate.now().toString();
         String record = loggedInUser + "," + date + "," + amount + " liters";
 
-        try (FileWriter writer = new FileWriter(FILENAME, true)) {
+        try (FileWriter writer = new FileWriter(FILENAME1, true)) {
             writer.write(record + "\n");
             System.out.println("Recorded: " + amount + " liters on " + date);
         } catch (IOException e) {
@@ -30,7 +30,7 @@ public class WaterIntake {
     }
 
     public void viewWaterIntakeHistory() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME1))) {
             String line;
             boolean found = false;
 
