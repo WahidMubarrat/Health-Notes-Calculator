@@ -1,0 +1,5 @@
+
+monon,2025-03-25,24.0 liters
+guddu,2025-03-25,1000.0 liters
+red1,2025-03-25,1.0 liters
+red1,2025-03-25,34.0 liters

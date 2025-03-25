@@ -9,3 +9,5 @@ qaz,qaz
 king,kimg
 guru,guru
 i,i
+gz,gz
+red1,red1
