@@ -49,6 +49,7 @@ public class SleepTracker {
             System.out.println("Error saving sleep duration to file: " + e.getMessage());
         }
     }
+
     public void viewSleepRecords() {
         System.out.println("\n===== Sleep Records for " + username + " =====");
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
@@ -56,7 +57,18 @@ public class SleepTracker {
             boolean found = false;
             while ((line = reader.readLine()) != null) {
                 if (line.contains("User: " + username)) {
-                    System.out.println(line);
+
+                    String[] parts = line.split(" - ");
+                    String date = parts[0];
+                    String user = parts[1].split(": ")[1];
+                    String duration = parts[2].split(": ")[1];
+
+
+                    System.out.println("┌────────────────────────────────────────────────┐");
+                    System.out.printf("│ %-46s │\n", "Date & Time: " + date);         // Adjusted format for date
+                    System.out.printf("│ %-46s │\n", "Username: " + user);      // Adjusted format for username
+                    System.out.printf("│ %-46s │\n", "Sleep Duration: " + duration); // Adjusted format for sleep duration
+                    System.out.println("└────────────────────────────────────────────────┘");
                     found = true;
                 }
             }
@@ -67,6 +79,8 @@ public class SleepTracker {
             System.out.println("Error reading sleep duration file: " + e.getMessage());
         }
     }
+
+
     private String formatTime(LocalDateTime time) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return time.format(formatter);

@@ -4,3 +4,4 @@ guddu,2025-03-25,1000.0 liters
 red1,2025-03-25,1.0 liters
 red1,2025-03-25,34.0 liters
 monon,2025-03-25,369.0 liters
+guddu,2025-03-28,10.0 liters
