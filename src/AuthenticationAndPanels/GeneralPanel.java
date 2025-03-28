@@ -36,7 +36,7 @@ public class GeneralPanel {
         }
     }
 
-    private void calculateBMIAndBMR() {
+  /*  private void calculateBMIAndBMR() {
         clearScreen();
         System.out.print("Enter your weight (kg): ");
         double weight = scanner.nextDouble();
@@ -55,7 +55,49 @@ public class GeneralPanel {
         System.out.println("\nYour BMI is: " + bmi);
         System.out.println("Your BMR is: " + bmr);
         pause();
+    }*/
+
+    private void calculateBMIAndBMR() {
+        clearScreen();
+
+        System.out.print("Enter your weight (kg): ");
+        double weight = scanner.nextDouble();
+        System.out.print("Enter your height (m): ");
+        double height = scanner.nextDouble();
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        scanner.nextLine();
+        System.out.print("Enter your gender (male/female): ");
+        String gender = scanner.nextLine();
+
+        BMIBMRcalculator calculator = new BMIBMRcalculator(weight, height, age, gender);
+        double bmi = calculator.calculateBMI();
+        double bmr = calculator.calculateBMR();
+
+
+        String line1 = "BMI: " + String.format("%.2f", bmi);
+        String line2 = "BMR: " + String.format("%.2f", bmr);
+
+        int maxLength = Math.max(line1.length(), line2.length());
+        int boxwidth=40;
+
+        System.out.println("┌──────────────────────────────────────────┐");
+        System.out.print("│ " + line1);
+        for (int i = 0; i < boxwidth - line1.length(); i++) {
+            System.out.print(" ");
+        }
+        System.out.println(" │");
+        System.out.print("│ " + line2);
+        for (int i = 0; i <boxwidth - line2.length(); i++) {
+            System.out.print(" ");
+        }
+        System.out.println(" │");
+        System.out.println("└──────────────────────────────────────────┘");
+
+        pause();
     }
+
+
 
     private void calculateFoodCalories() {
         clearScreen();
