@@ -12,3 +12,6 @@ i,i
 gz,gz
 red1,red1
 wmba,wmba
+boss,boss
+,
+,mo

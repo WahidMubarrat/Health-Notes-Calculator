@@ -22,7 +22,7 @@ public class Authentication {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME, true))) {
             writer.write(username + "," + password);
             writer.newLine();
-            System.out.println("Registration successful!");
+
             return true;
         } catch (IOException e) {
             System.out.println("Error saving user data.");}
@@ -33,7 +33,6 @@ public class Authentication {
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
                 if (parts.length == 2 && parts[0].equals(username) && parts[1].equals(password)) {
-                    System.out.println("Login successful!");
                     return true;
                 }}
         } catch (IOException e) {

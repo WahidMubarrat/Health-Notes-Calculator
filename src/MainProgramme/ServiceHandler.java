@@ -83,6 +83,7 @@ public class ServiceHandler {
         pause();
     }
 
+
     private void loginUser() {
         clearScreen();
         System.out.print("Enter username: ");
