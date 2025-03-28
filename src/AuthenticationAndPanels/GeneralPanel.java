@@ -55,7 +55,24 @@ public class GeneralPanel {
         System.out.println("\nYour BMI is: " + bmi);
         System.out.println("Your BMR is: " + bmr);
         pause();
-    }*/
+    }
+       private void calculateFoodCalories() {
+        clearScreen();
+        System.out.print("Enter the food item (e.g., 'White Rice'): ");
+        String foodItem = scanner.nextLine();
+        System.out.print("Enter the quantity in grams: ");
+        double quantityInGrams = scanner.nextDouble();
+
+        FoodCaloryCalculator foodCaloryCalculator = new FoodCaloryCalculator();
+        double calories = foodCaloryCalculator.calculateCalories(foodItem, quantityInGrams);
+
+        if (calories != -1) {
+            System.out.println("\nThe calories for " + quantityInGrams + " grams of " + foodItem + " is: " + calories + " kcal");
+        }
+        pause();
+    }
+
+    */
 
     private void calculateBMIAndBMR() {
         clearScreen();
@@ -78,7 +95,7 @@ public class GeneralPanel {
         String line1 = "BMI: " + String.format("%.2f", bmi);
         String line2 = "BMR: " + String.format("%.2f", bmr);
 
-        int maxLength = Math.max(line1.length(), line2.length());
+
         int boxwidth=40;
 
         System.out.println("┌──────────────────────────────────────────┐");
@@ -97,8 +114,6 @@ public class GeneralPanel {
         pause();
     }
 
-
-
     private void calculateFoodCalories() {
         clearScreen();
         System.out.print("Enter the food item (e.g., 'White Rice'): ");
@@ -110,10 +125,33 @@ public class GeneralPanel {
         double calories = foodCaloryCalculator.calculateCalories(foodItem, quantityInGrams);
 
         if (calories != -1) {
-            System.out.println("\nThe calories for " + quantityInGrams + " grams of " + foodItem + " is: " + calories + " kcal");
+            String line1 = "Food Item: " + foodItem;
+            String line2 = "Quantity: " + quantityInGrams + " grams";
+            String line3 = "Calories: " + String.format("%.2f", calories) + " kcal";
+
+            int boxWidth = 40;
+            System.out.println("┌──────────────────────────────────────────┐");
+            System.out.print("│ " + line1);
+            for (int i = 0; i < boxWidth - line1.length(); i++) {
+                System.out.print(" ");
+            }
+            System.out.println(" │");
+            System.out.print("│ " + line2);
+            for (int i = 0; i < boxWidth - line2.length(); i++) {
+                System.out.print(" ");
+            }
+            System.out.println(" │");
+            System.out.print("│ " + line3);
+            for (int i = 0; i < boxWidth - line3.length(); i++) {
+                System.out.print(" ");
+            }
+            System.out.println(" │");
+            System.out.println("└──────────────────────────────────────────┘");
         }
         pause();
     }
+
+
 
     private void clearScreen() {
         System.out.print("\033[H\033[2J");
