@@ -65,9 +65,9 @@ public class SleepTracker {
 
 
                     System.out.println("┌────────────────────────────────────────────────┐");
-                    System.out.printf("│ %-46s │\n", "Date & Time: " + date);         // Adjusted format for date
-                    System.out.printf("│ %-46s │\n", "Username: " + user);      // Adjusted format for username
-                    System.out.printf("│ %-46s │\n", "Sleep Duration: " + duration); // Adjusted format for sleep duration
+                    System.out.printf("│ %-46s │\n", "Date & Time: " + date);
+                    System.out.printf("│ %-46s │\n", "Username: " + user);
+                    System.out.printf("│ %-46s │\n", "Sleep Duration: " + duration);
                     System.out.println("└────────────────────────────────────────────────┘");
                     found = true;
                 }
