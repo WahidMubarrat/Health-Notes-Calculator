@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +179,7 @@
       <workItem from="1743019945629" duration="193000" />
       <workItem from="1743080551526" duration="39000" />
       <workItem from="1743157587770" duration="19000" />
-      <workItem from="1743157668986" duration="5173000" />
+      <workItem from="1743157668986" duration="6440000" />
     </task>
     <servers />
   </component>
@@ -205,8 +206,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java</url>
-          <line>1</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -8,6 +8,7 @@ import java.util.Scanner;
 import PersonalDataTracker.StepTracker;
 import PersonalDataTracker.WaterIntake;
 import Calculation.SleepTracker;
+import Calculation.WorkOutTracker;
 
 public class LoginPanel {
     private Scanner scanner = new Scanner(System.in);
@@ -16,6 +17,7 @@ public class LoginPanel {
     private SleepTracker sleepTracker;
     private WaterIntake waterIntakeTracker;
     private StepTracker stepTracker;
+    private WorkOutTracker workoutTracker;
 
     public LoginPanel(String loggedInUser) {
         this.loggedInUser = loggedInUser;
@@ -23,6 +25,7 @@ public class LoginPanel {
         this.sleepTracker = new SleepTracker(loggedInUser);
         this.waterIntakeTracker = new WaterIntake(loggedInUser);
         this.stepTracker = new StepTracker(loggedInUser);
+        this.workoutTracker = new WorkOutTracker(loggedInUser);
     }
 
     public void showPanel() {
@@ -34,7 +37,8 @@ public class LoginPanel {
             System.out.println("1. Track Sleep");
             System.out.println("2. Track Water Intake");
             System.out.println("3. Track Steps");
-            System.out.println("4. Logout");
+            System.out.println("4. Track Workout");
+            System.out.println("5. Logout");
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -51,6 +55,9 @@ public class LoginPanel {
                     trackSteps();
                     break;
                 case 4:
+                    trackWorkout();
+                    break;
+                case 5:
                     logout();
                     break;
                 default:
@@ -153,7 +160,33 @@ public class LoginPanel {
 
         pause();
     }
+    private void trackWorkout() {
+        clearScreen();
+        System.out.println("===== Workout Tracker =====");
+        System.out.println("1. Start Workout Timer");
+        System.out.println("2. Stop Workout Timer");
+        System.out.println("3. View Workout Records");
 
+        System.out.print("Enter your choice: ");
+        int workoutChoice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (workoutChoice) {
+            case 1:
+                workoutTracker.startWorkout();
+                break;
+            case 2:
+                workoutTracker.stopWorkout();
+                break;
+            case 3:
+                workoutTracker.viewWorkoutRecords();
+                break;
+            default:
+                System.out.println("Invalid choice.");
+        }
+
+        pause();
+    }
     private void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
