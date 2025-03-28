@@ -4,7 +4,7 @@ import java.io.*;
 import java.time.LocalDate;
 
 public class WaterIntake {
-    private static final String FILENAME1 = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\water_intake.txt";
+    private static final String FILENAME1 = "water_intake.txt";
     private String loggedInUser;
 
     public WaterIntake(String loggedInUser) {

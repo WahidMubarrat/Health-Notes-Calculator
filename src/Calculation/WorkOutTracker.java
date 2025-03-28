@@ -34,7 +34,7 @@ public class WorkOutTracker {
         return hours + " hours and " + minutes + " minutes";
     }
 
-    String fileName = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\workout_duration.txt";
+    String fileName = "workout_duration.txt";
 
     private void saveWorkoutDurationToFile() {
         String workoutRecord = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))

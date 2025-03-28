@@ -2,7 +2,7 @@ package AuthenticationAndPanels;
 import java.io.*;
 
 public class Authentication {
-    private static final String FILE_NAME = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\user.txt";
+    private static final String FILE_NAME = "user.txt";
     private boolean userExists(String username) {
         try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
             String line;

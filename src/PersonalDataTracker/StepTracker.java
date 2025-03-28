@@ -4,7 +4,7 @@ import java.io.*;
 import java.time.LocalDate;
 
 public class StepTracker {
-    private static final String FILENAME2 = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\step_tracker.txt";
+    private static final String FILENAME2 = "step_tracker.txt";
     private String loggedInUser;
 
     public StepTracker(String loggedInUser) {

@@ -36,7 +36,7 @@ public class SleepTracker {
         long minutes = duration.toMinutes() % 60;
         return hours + " hours and " + minutes + " minutes";
     }
-    String fileName = "C:\\Users\\wahid\\IdeaProjects\\Savour the Flavour of Health\\src\\sleep_duration.txt";
+    String fileName = "sleep_duration.txt";
     private void saveSleepDurationToFile() {
 
         String sleepRecord = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
