@@ -9,6 +9,7 @@ import PersonalDataTracker.StepTracker;
 import PersonalDataTracker.WaterIntake;
 import Calculation.SleepTracker;
 import Calculation.WorkOutTracker;
+import PersonalDataTracker.HealthMetrics;
 
 public class LoginPanel {
     private Scanner scanner = new Scanner(System.in);
@@ -18,6 +19,7 @@ public class LoginPanel {
     private WaterIntake waterIntakeTracker;
     private StepTracker stepTracker;
     private WorkOutTracker workoutTracker;
+    private HealthMetrics healthMetricsTracker;
 
     public LoginPanel(String loggedInUser) {
         this.loggedInUser = loggedInUser;
@@ -26,6 +28,8 @@ public class LoginPanel {
         this.waterIntakeTracker = new WaterIntake(loggedInUser);
         this.stepTracker = new StepTracker(loggedInUser);
         this.workoutTracker = new WorkOutTracker(loggedInUser);
+        this.healthMetricsTracker = new HealthMetrics(loggedInUser);
+
     }
 
     public void showPanel() {
@@ -38,7 +42,8 @@ public class LoginPanel {
             System.out.println("2. Track Water Intake");
             System.out.println("3. Track Steps");
             System.out.println("4. Track Workout");
-            System.out.println("5. Logout");
+            System.out.println("5. Track Health Metrics");
+            System.out.println("6. Logout");
 
             System.out.print("Enter your choice: ");
             int choice = scanner.nextInt();
@@ -58,6 +63,9 @@ public class LoginPanel {
                     trackWorkout();
                     break;
                 case 5:
+                    trackHealthMetrics();
+                    break;
+                case 6:
                     logout();
                     break;
                 default:
@@ -187,6 +195,44 @@ public class LoginPanel {
 
         pause();
     }
+
+    private void trackHealthMetrics() {
+        clearScreen();
+        System.out.println("===== Health Metric Tracker =====");
+        System.out.println("1. Record & Save Health Metrics");
+        System.out.println("2. View Health History");
+
+        System.out.print("Enter your choice: ");
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        switch (choice) {
+            case 1:
+                System.out.print("Enter Blood Pressure (e.g., 120/80): ");
+                String bloodPressure = scanner.nextLine();
+
+                System.out.print("Enter Glucose Level (mg/dL): ");
+                String glucose = scanner.nextLine();
+
+                System.out.print("Enter Heart Rate (bpm): ");
+                String heartRate = scanner.nextLine();
+
+                System.out.print("Enter Pulse Rate (bpm): ");
+                String pulseRate = scanner.nextLine();
+
+                healthMetricsTracker.addHealthMetric(bloodPressure, glucose, heartRate, pulseRate);
+                break;
+
+            case 2:
+                healthMetricsTracker.viewHealthHistory();
+                break;
+
+            default:
+                System.out.println("Invalid choice. Returning to main panel.");
+        }
+
+        pause();}
+
     private void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
