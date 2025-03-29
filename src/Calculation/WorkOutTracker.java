@@ -42,7 +42,7 @@ public class WorkOutTracker {
 
         try (FileWriter writer = new FileWriter(fileName, true)) {
             writer.write(workoutRecord);
-            System.out.println("Workout duration saved to " + fileName);
+            System.out.println("Workout duration saved to 'Workout_Duration' file" );
         } catch (IOException e) {
             System.out.println("Error saving workout duration to file: " + e.getMessage());
         }

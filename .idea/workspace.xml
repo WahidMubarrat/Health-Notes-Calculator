@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/Authentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/Authentication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sleep_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sleep_duration.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/StepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/StepTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sleep_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sleep_duration.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/step_tracker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/step_tracker.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/water_intake.txt" beforeDir="false" afterPath="$PROJECT_DIR$/water_intake.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/workout_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workout_duration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/step_tracker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/step_tracker.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/water_intake.txt" beforeDir="false" afterPath="$PROJECT_DIR$/water_intake.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workout_duration.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +75,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wahid\IdeaProjects\Savour the Flavour of Health" />
       <recent name="C:\Users\wahid\IdeaProjects\Savour the Flavour of Health\src" />
     </key>
   </component>
@@ -187,7 +185,7 @@
       <workItem from="1743019945629" duration="193000" />
       <workItem from="1743080551526" duration="39000" />
       <workItem from="1743157587770" duration="19000" />
-      <workItem from="1743157668986" duration="8808000" />
+      <workItem from="1743157668986" duration="9915000" />
     </task>
     <servers />
   </component>

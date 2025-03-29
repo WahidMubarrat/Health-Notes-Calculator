@@ -44,7 +44,7 @@ public class SleepTracker {
 
         try (FileWriter writer = new FileWriter(fileName, true)) {
             writer.write(sleepRecord);
-            System.out.println("Sleep duration saved to " + fileName);
+            System.out.println("Sleep duration saved to 'Sleep_Duration' file");
         } catch (IOException e) {
             System.out.println("Error saving sleep duration to file: " + e.getMessage());
         }
