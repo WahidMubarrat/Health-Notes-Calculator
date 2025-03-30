@@ -1,28 +1,27 @@
-package PersonalDataTracker;
 
+
+package PersonalDataTracker;
 import java.io.*;
 import java.time.LocalDate;
-
-public class StepTracker {
-    private static final String FILENAME2 = "step_tracker.txt";
-    private String loggedInUser;
-
+public class StepTracker extends Tracker {
     public StepTracker(String loggedInUser) {
-        this.loggedInUser = loggedInUser;
+        super(loggedInUser, "step_tracker.txt");
     }
 
-    public void addSteps(int steps) {
+
+
+    public void addRecord(int steps) {
         String date = LocalDate.now().toString();
         String record = loggedInUser + "," + date + "," + steps + " steps";
 
-        try (FileWriter writer = new FileWriter(FILENAME2, true)) {
+        try (FileWriter writer = new FileWriter(filename, true)) {
             writer.write(record + "\n");
             System.out.println("Recorded: " + steps + " steps on " + date);
         } catch (IOException e) {
             System.out.println("An error occurred while saving data: " + e.getMessage());
         }}
-    public void viewStepHistory() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME2))) {
+    public void viewHistory() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             boolean found = false;
 
@@ -46,4 +45,5 @@ public class StepTracker {
             System.out.println("└──────────────────────────────────────────┘");
         } catch (IOException e) {
             System.out.println("No previous step records found.");
-        }}}
+        }}
+}

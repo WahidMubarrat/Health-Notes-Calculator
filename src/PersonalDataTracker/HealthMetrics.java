@@ -1,33 +1,26 @@
-package PersonalDataTracker;
 
+package PersonalDataTracker;
 import java.io.*;
 import java.time.LocalDate;
-import java.io.FileWriter;
-import java.io.IOException;
+public class HealthMetrics extends Tracker {
+    public HealthMetrics(String loggedInUser) {
+        super(loggedInUser, "health_metrics.txt");
+    }
 
-public class HealthMetrics {
+    public void addRecord(String bloodPressure, String glucose, String heartRate, String pulseRate) {
+        String date = LocalDate.now().toString();
+        String record = loggedInUser + "," + date + "," + bloodPressure + "," + glucose + "," + heartRate + "," + pulseRate;
 
-       private static final String FILENAME = "health_metrics.txt";
-        private String loggedInUser;
-
-        public HealthMetrics(String loggedInUser) {
-            this.loggedInUser = loggedInUser;
+        try (FileWriter writer = new FileWriter(filename, true)) {
+            writer.write(record + "\n");
+            System.out.println("Recorded on " + date + " - Blood Pressure: " + bloodPressure + ", Glucose: " + glucose + ", Heart Rate: " + heartRate + ", Pulse Rate: " + pulseRate);
+        } catch (IOException e) {
+            System.out.println("An error occurred while saving health data: " + e.getMessage());
         }
+    }
 
-        public void addHealthMetric(String bloodPressure, String glucose, String heartRate, String pulseRate) {
-            String date = LocalDate.now().toString();
-            String record = loggedInUser + "," + date + "," + bloodPressure + "," + glucose + "," + heartRate + "," + pulseRate;
-
-            try (FileWriter writer = new FileWriter(FILENAME, true)) {
-                writer.write(record + "\n");
-                System.out.println("Recorded on " + date + " - Blood Pressure: " + bloodPressure + ", Glucose: " + glucose + ", Heart Rate: " + heartRate + ", Pulse Rate: " + pulseRate);
-            } catch (IOException e) {
-                System.out.println("An error occurred while saving health data: " + e.getMessage());
-            }
-        }
-
-    public void viewHealthHistory() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME))) {
+    public void viewHistory() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             boolean found = false;
 
@@ -58,6 +51,4 @@ public class HealthMetrics {
             System.out.println("No previous health records found.");
         }
     }
-    }
-
-
+}

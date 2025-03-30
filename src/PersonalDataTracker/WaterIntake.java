@@ -1,29 +1,27 @@
+
+
 package PersonalDataTracker;
 
 import java.io.*;
 import java.time.LocalDate;
-
-public class WaterIntake {
-    private static final String FILENAME1 = "water_intake.txt";
-    private String loggedInUser;
-
+public class WaterIntake extends Tracker {
     public WaterIntake(String loggedInUser) {
-        this.loggedInUser = loggedInUser;
+        super(loggedInUser, "water_intake.txt");
     }
 
-    public void addWaterIntake(double amount) {
+    public void addRecord(double amount) {
         String date = LocalDate.now().toString();
         String record = loggedInUser + "," + date + "," + amount + " liters";
 
-        try (FileWriter writer = new FileWriter(FILENAME1, true)) {
+        try (FileWriter writer = new FileWriter(filename, true)) {
             writer.write(record + "\n");
             System.out.println("Recorded: " + amount + " liters on " + date);
         } catch (IOException e) {
             System.out.println("An error occurred while saving data: " + e.getMessage());
         }}
 
-    public void viewWaterIntakeHistory() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(FILENAME1))) {
+    public void viewHistory() {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filename))) {
             String line;
             boolean found = false;
 
@@ -47,5 +45,6 @@ public class WaterIntake {
             System.out.println("└──────────────────────────────────────────┘"); }
         catch (IOException e) {
             System.out.println("No previous water intake records found.");
-        }}}
+        }
+}}
 

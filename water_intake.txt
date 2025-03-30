@@ -7,3 +7,5 @@ monon,2025-03-25,369.0 liters
 guddu,2025-03-28,10.0 liters
 monon,2025-03-28,3.0 liters
 guddu,2025-03-29,1.0 liters
+me,2025-03-30,5 liters liters
+monon,2025-03-30,1.0 liters
