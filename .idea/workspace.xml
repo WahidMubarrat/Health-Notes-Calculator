@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health_metrics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/health_metrics.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/HealthMetrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/HealthMetrics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/StepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/StepTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/step_tracker.txt" beforeDir="false" afterPath="$PROJECT_DIR$/step_tracker.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/water_intake.txt" beforeDir="false" afterPath="$PROJECT_DIR$/water_intake.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculation/BMIBMRcalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/BMIBMRcalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +184,8 @@
       <workItem from="1743157668986" duration="9915000" />
       <workItem from="1743236824093" duration="832000" />
       <workItem from="1743279769887" duration="1836000" />
-      <workItem from="1743324825779" duration="3107000" />
+      <workItem from="1743324825779" duration="4446000" />
+      <workItem from="1743655313855" duration="7000" />
     </task>
     <servers />
   </component>
@@ -218,12 +212,11 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java</url>
-          <line>1</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PersonalDataTracker/WaterIntake.java</url>
-          <line>50</line>
+          <line>1</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
