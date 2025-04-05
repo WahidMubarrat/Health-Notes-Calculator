@@ -31,4 +31,9 @@ public abstract  class ActivityTracker implements Activity {
     public void viewRecords() {
 
     }
+
+    public String formatTime(LocalDateTime time) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+        return time.format(formatter);
+    }
 }

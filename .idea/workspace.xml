@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sleep_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/sleep_duration.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculation/ActivityTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/ActivityTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/workout_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workout_duration.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +191,7 @@
       <workItem from="1743324825779" duration="4446000" />
       <workItem from="1743655313855" duration="7000" />
       <workItem from="1743665504832" duration="1729000" />
-      <workItem from="1743882706210" duration="1030000" />
+      <workItem from="1743882706210" duration="1862000" />
     </task>
     <servers />
   </component>
@@ -228,7 +227,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Calculation/ActivityTracker.java</url>
-          <line>33</line>
+          <line>38</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>

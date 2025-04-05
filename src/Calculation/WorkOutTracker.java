@@ -11,37 +11,28 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class WorkOutTracker {
-    private LocalDateTime workoutStartTime;
-    private LocalDateTime workoutEndTime;
-    private String username;
+public class WorkOutTracker extends ActivityTracker{
 
-    public WorkOutTracker(String username) {
-        this.username = username;
+
+    public WorkOutTracker(String loggedInUser) {
+        super(loggedInUser, "workout_duration.txt");
+    }
+    public void startActivity() {
+        startTime = LocalDateTime.now();
+        System.out.println("Workout timer started at: " + formatTime(startTime));
     }
 
-    public void startWorkout() {
-        workoutStartTime = LocalDateTime.now();
-        System.out.println("Workout timer started at: " + formatTime(workoutStartTime));
+    public void stopActivity() {
+        endTime = LocalDateTime.now();
+        saveDurationToFile();
     }
 
-    public void stopWorkout() {
-        workoutEndTime = LocalDateTime.now();
-        saveWorkoutDurationToFile();
-    }
 
-    public String getWorkoutDuration() {
-        Duration duration = Duration.between(workoutStartTime, workoutEndTime);
-        long hours = duration.toHours();
-        long minutes = duration.toMinutes() % 60;
-        return hours + " hours and " + minutes + " minutes";
-    }
 
-    String fileName = "workout_duration.txt";
 
-    private void saveWorkoutDurationToFile() {
+    private void saveDurationToFile() {
         String workoutRecord = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-                + " - User: " + username + " - Workout Duration: " + getWorkoutDuration() + "\n";
+                + " - User: " + username + " - Workout Duration: " + getDuration() + "\n";
 
         try (FileWriter writer = new FileWriter(fileName, true)) {
             writer.write(workoutRecord);
@@ -51,7 +42,7 @@ public class WorkOutTracker {
         }
     }
 
-    public void viewWorkoutRecords() {
+    public void viewRecords() {
         System.out.println("\n===== Workout Records for " + username + " =====");
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -79,9 +70,14 @@ public class WorkOutTracker {
         }
     }
 
-    private String formatTime(LocalDateTime time) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        return time.format(formatter);
+
+
+    @Override
+    public String getDuration() {
+        Duration duration = Duration.between(startTime, endTime);
+        long hours = duration.toHours();
+        long minutes = duration.toMinutes() % 60;
+        return hours + " hours and " + minutes + " minutes";
     }
 }
 

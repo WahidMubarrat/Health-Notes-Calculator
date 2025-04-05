@@ -168,13 +168,13 @@ public class LoginPanel {
 
         switch (workoutChoice) {
             case 1:
-                workoutTracker.startWorkout();
+                workoutTracker.startActivity();
                 break;
             case 2:
-                workoutTracker.stopWorkout();
+                workoutTracker.stopActivity();
                 break;
             case 3:
-                workoutTracker.viewWorkoutRecords();
+                workoutTracker.viewRecords();
                 break;
             default:
                 System.out.println("Invalid choice.");

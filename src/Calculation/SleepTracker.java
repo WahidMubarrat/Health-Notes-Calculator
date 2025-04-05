@@ -59,10 +59,6 @@ public class SleepTracker extends ActivityTracker{
     }
 
 
-    private String formatTime(LocalDateTime time) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-        return time.format(formatter);
-    }
 
     @Override
     public String getDuration() {
