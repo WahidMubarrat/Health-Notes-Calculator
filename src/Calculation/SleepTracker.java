@@ -1,3 +1,4 @@
+
 package Calculation;
 
 import java.io.BufferedReader;
@@ -8,49 +9,26 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class SleepTracker {
-    private LocalDateTime sleepStartTime;
-    private LocalDateTime wakeUpTime;
-    private String username;
+
+public class SleepTracker extends ActivityTracker{
 
 
-    public SleepTracker(String username) {
-        this.username = username;
+   public SleepTracker(String loggedInUser) {
+       super(loggedInUser, "sleep_duration.txt");
+   }
+    public void startActivity() {
+        startTime = LocalDateTime.now();
+        System.out.println("Sleep timer started at: " + formatTime(startTime));
     }
 
-    public void startSleep() {
-        sleepStartTime = LocalDateTime.now();
-        System.out.println("Sleep timer started at: " + formatTime(sleepStartTime));
-    }
+    public void stopActivity() {
+        endTime = LocalDateTime.now();
 
-    public void stopSleep() {
-        wakeUpTime = LocalDateTime.now();
-
-        saveSleepDurationToFile();
+        saveDurationToFile();
     }
 
 
-    public String getSleepDuration() {
-        Duration duration = Duration.between(sleepStartTime, wakeUpTime);
-        long hours = duration.toHours();
-        long minutes = duration.toMinutes() % 60;
-        return hours + " hours and " + minutes + " minutes";
-    }
-    String fileName = "sleep_duration.txt";
-    private void saveSleepDurationToFile() {
-
-        String sleepRecord = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
-                + " - User: " + username + " - Sleep Duration: " + getSleepDuration() + "\n";
-
-        try (FileWriter writer = new FileWriter(fileName, true)) {
-            writer.write(sleepRecord);
-            System.out.println("Sleep duration saved to 'Sleep_Duration' file");
-        } catch (IOException e) {
-            System.out.println("Error saving sleep duration to file: " + e.getMessage());
-        }
-    }
-
-    public void viewSleepRecords() {
+    public void viewRecords() {
         System.out.println("\n===== Sleep Records for " + username + " =====");
         try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
             String line;
@@ -85,5 +63,27 @@ public class SleepTracker {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         return time.format(formatter);
     }
+
+    @Override
+    public String getDuration() {
+        Duration duration = Duration.between(startTime, endTime);
+        long hours = duration.toHours();
+        long minutes = duration.toMinutes() % 60;
+        return hours + " hours and " + minutes + " minutes";
+    }
+    String fileName = "sleep_duration.txt";
+    private void saveDurationToFile() {
+
+        String sleepRecord = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"))
+                + " - User: " + username + " - Sleep Duration: " + getDuration() + "\n";
+
+        try (FileWriter writer = new FileWriter(fileName, true)) {
+            writer.write(sleepRecord);
+            System.out.println("Sleep duration saved to 'Sleep_Duration' file");
+        } catch (IOException e) {
+            System.out.println("Error saving sleep duration to file: " + e.getMessage());
+        }
+    }
 }
+
 

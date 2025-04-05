@@ -92,13 +92,13 @@ public class LoginPanel {
 
         switch (sleepChoice) {
             case 1:
-                sleepTracker.startSleep();
+                sleepTracker.startActivity();
                 break;
             case 2:
-                sleepTracker.stopSleep();
+                sleepTracker.stopActivity();
                 break;
             case 3:
-                sleepTracker.viewSleepRecords();
+                sleepTracker.viewRecords();
                 break;
             default:
                 System.out.println("Invalid choice.");
@@ -222,3 +222,6 @@ public class LoginPanel {
         scanner.nextLine();
     }
 }
+
+
+
