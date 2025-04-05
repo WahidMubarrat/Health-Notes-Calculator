@@ -36,44 +36,6 @@ public class GeneralPanel {
         }
     }
 
-  /*  private void calculateBMIAndBMR() {
-        clearScreen();
-        System.out.print("Enter your weight (kg): ");
-        double weight = scanner.nextDouble();
-        System.out.print("Enter your height (m): ");
-        double height = scanner.nextDouble();
-        System.out.print("Enter your age: ");
-        int age = scanner.nextInt();
-        scanner.nextLine();
-        System.out.print("Enter your gender (male/female): ");
-        String gender = scanner.nextLine();
-
-        BMIBMRcalculator calculator = new BMIBMRcalculator(weight, height, age, gender);
-        double bmi = calculator.calculateBMI();
-        double bmr = calculator.calculateBMR();
-
-        System.out.println("\nYour BMI is: " + bmi);
-        System.out.println("Your BMR is: " + bmr);
-        pause();
-    }
-       private void calculateFoodCalories() {
-        clearScreen();
-        System.out.print("Enter the food item (e.g., 'White Rice'): ");
-        String foodItem = scanner.nextLine();
-        System.out.print("Enter the quantity in grams: ");
-        double quantityInGrams = scanner.nextDouble();
-
-        FoodCaloryCalculator foodCaloryCalculator = new FoodCaloryCalculator();
-        double calories = foodCaloryCalculator.calculateCalories(foodItem, quantityInGrams);
-
-        if (calories != -1) {
-            System.out.println("\nThe calories for " + quantityInGrams + " grams of " + foodItem + " is: " + calories + " kcal");
-        }
-        pause();
-    }
-
-    */
-
     private void calculateBMIAndBMR() {
         clearScreen();
 
@@ -113,6 +75,8 @@ public class GeneralPanel {
 
         pause();
     }
+
+
 
     private void calculateFoodCalories() {
         clearScreen();

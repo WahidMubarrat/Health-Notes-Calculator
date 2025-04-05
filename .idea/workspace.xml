@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculation/ActivityTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/ActivityTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/SleepTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/WorkOutTracker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workout_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workout_duration.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/GeneralPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/GeneralPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculation/BMIBMRcalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/BMIBMRcalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Calculation/FoodCaloryCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculation/FoodCaloryCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainProgramme/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainProgramme/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,7 @@
       <workItem from="1743324825779" duration="4446000" />
       <workItem from="1743655313855" duration="7000" />
       <workItem from="1743665504832" duration="1729000" />
-      <workItem from="1743882706210" duration="1862000" />
+      <workItem from="1743882706210" duration="3623000" />
     </task>
     <servers />
   </component>
@@ -203,12 +202,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MainProgramme/Main.java</url>
-          <line>11</line>
+          <line>12</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MainProgramme/Main.java</url>
-          <line>8</line>
+          <line>9</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

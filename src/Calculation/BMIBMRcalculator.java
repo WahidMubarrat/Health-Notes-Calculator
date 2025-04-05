@@ -1,8 +1,3 @@
-
-
-
-
-
 package Calculation;
 
 public class BMIBMRcalculator {
@@ -43,4 +38,6 @@ public class BMIBMRcalculator {
 
         return Math.round(bmr * BMI_MULTIPLIER) / BMI_MULTIPLIER;
     }
+
+
 }
