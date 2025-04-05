@@ -1,4 +1,4 @@
-
+/*
 
 package Calculation;
 
@@ -33,6 +33,52 @@ public class FoodCaloryCalculator {
     }
 }
 
+*/
+
+package Calculation;
+
+import java.io.*;
+
+public class FoodCaloryCalculator {
+    private String filePath="food_items.txt";
+
+    public FoodCaloryCalculator(String filePath) {
+        this.filePath = filePath;
+    }
+
+    public double calculateCalories(String foodItem, double quantityInGrams) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(",");
+                if (parts.length == 2) {
+                    String item = parts[0].trim();
+                    double calories = Double.parseDouble(parts[1].trim());
+
+
+                    if (item.equalsIgnoreCase(foodItem)) {
+                        return (calories / 100) * quantityInGrams;
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Error reading the file: " + e.getMessage());
+        }
+
+        System.out.println("Food item not found in database.");
+        return -1;
+    }
+
+    public void addFoodItem(String newItem, double newCalories) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, true))) {
+            writer.newLine();
+            writer.write(newItem + "," + newCalories);
+            System.out.println("Food item added successfully: " + newItem + " (" + newCalories + " cal/100g)");
+        } catch (IOException e) {
+            System.out.println("Error writing to food data file: " + e.getMessage());
+        }
+    }
+}
 
 
 
