@@ -1,7 +1,0 @@
-naan,1.0
-White Rice, 200,
-Naan Rotihee, 218
-Vegetable Biryanie ,  67
-Low Fat Milk ,  60
-Chicken Tikka , 0
-morich,100.0

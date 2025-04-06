@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class FoodCaloryCalculatorTest {
-  /*  FoodCaloryCalculator calc=new FoodCaloryCalculator();
+    FoodCaloryCalculator calc=new FoodCaloryCalculator();
     @Test
     public void testCalculateCaloriesForFriedChicken() {
         String foodItem = "Fried Chicken";
@@ -26,5 +26,5 @@ public class FoodCaloryCalculatorTest {
         assertEquals(-1, calories);
     }
 
-   */
+
 }
