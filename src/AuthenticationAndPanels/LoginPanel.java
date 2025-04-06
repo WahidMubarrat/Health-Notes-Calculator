@@ -36,11 +36,11 @@ public class LoginPanel {
             System.out.println("===== Login Panel =====");
             System.out.println("Welcome, " + loggedInUser + "!");
             System.out.println("Choose an option:");
-            System.out.println("1. Track Sleep");
+            System.out.println("1. Track Health Metrics");
             System.out.println("2. Track Water Intake");
             System.out.println("3. Track Steps");
             System.out.println("4. Track Workout");
-            System.out.println("5. Track Health Metrics");
+            System.out.println("5. Track Sleep");
             System.out.println("6. Logout");
 
             System.out.print("Enter your choice: ");
@@ -49,7 +49,7 @@ public class LoginPanel {
 
             switch (choice) {
                 case 1:
-                    trackSleep();
+                    trackHealthMetrics();
                     break;
                 case 2:
                     trackWaterIntake();
@@ -61,7 +61,7 @@ public class LoginPanel {
                     trackWorkout();
                     break;
                 case 5:
-                    trackHealthMetrics();
+                     trackSleep();
                     break;
                 case 6:
                     logout();

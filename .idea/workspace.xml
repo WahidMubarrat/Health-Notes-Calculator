@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="" />
+    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_metrics.txt" beforeDir="false" afterPath="$PROJECT_DIR$/health_metrics.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthenticationAndPanels/LoginPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.txt" beforeDir="false" afterPath="$PROJECT_DIR$/user.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/water_intake.txt" beforeDir="false" afterPath="$PROJECT_DIR$/water_intake.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/workout_duration.txt" beforeDir="false" afterPath="$PROJECT_DIR$/workout_duration.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -185,6 +192,7 @@
       <workItem from="1743655313855" duration="7000" />
       <workItem from="1743665504832" duration="1729000" />
       <workItem from="1743882706210" duration="5532000" />
+      <workItem from="1743968173971" duration="731000" />
     </task>
     <servers />
   </component>
