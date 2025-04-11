@@ -8,7 +8,7 @@ import PersonalDataTracker.WaterIntake;
 import PersonalDataTracker.HealthMetrics;
 import Calculation.SleepTracker;
 import Calculation.WorkOutTracker;
-
+import MainProgramme.ServiceHandler;
 public class PersonalPanel {
     private Scanner scanner = new Scanner(System.in);
     private boolean isLoggedIn;
@@ -31,7 +31,7 @@ public class PersonalPanel {
 
     public void showPanel() {
         while (isLoggedIn) {
-            clearScreen();
+            ServiceHandler.clearScreen();
             System.out.println("===== Personal Panel =====");
             System.out.println("Welcome, " + loggedInUser + "!");
             System.out.println("Choose an option:");
@@ -79,7 +79,7 @@ public class PersonalPanel {
     }
 
     private void trackSleep() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.println("===== Sleep Tracker =====");
         System.out.println("1. Start Sleep Timer");
         System.out.println("2. Stop Sleep Timer");
@@ -106,7 +106,7 @@ public class PersonalPanel {
     }
 
     private void trackWaterIntake() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.println("===== Water Intake Tracker =====");
         System.out.println("1. Record & Save Water Intake");
         System.out.println("2. View Water Intake History");
@@ -131,7 +131,7 @@ public class PersonalPanel {
     }
 
     private void trackSteps() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.println("===== Step Tracker =====");
         System.out.println("1. Record & Save Steps");
         System.out.println("2. View Step History");
@@ -156,7 +156,7 @@ public class PersonalPanel {
     }
 
     private void trackWorkout() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.println("===== Workout Tracker =====");
         System.out.println("1. Start Workout Timer");
         System.out.println("2. Stop Workout Timer");
@@ -182,7 +182,7 @@ public class PersonalPanel {
     }
 
     private void trackHealthMetrics() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.println("===== Health Metrics Tracker =====");
         System.out.println("1. Record & Save Health Metrics");
         System.out.println("2. View Health History");
@@ -212,11 +212,7 @@ public class PersonalPanel {
     }
 
 
-   private void clearScreen() {
-       for (int i = 0; i < 5; i++) {
-           System.out.println();
-       }
-   }
+
 
     private void pause() {
         System.out.println("\nPress Enter to continue...");

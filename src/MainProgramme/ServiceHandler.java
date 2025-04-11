@@ -101,7 +101,7 @@ public class ServiceHandler {
     }
 
 
-    private void clearScreen() {
+    public static void clearScreen() {
         for (int i = 0; i < 5; i++) {
             System.out.println();
         }
@@ -109,7 +109,7 @@ public class ServiceHandler {
 
 
 
-    private void pause() {
+   public  void pause() {
         System.out.println("\nPress Enter to continue...");
         scanner.nextLine();
     }

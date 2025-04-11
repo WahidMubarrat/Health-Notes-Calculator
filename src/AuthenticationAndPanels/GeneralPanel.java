@@ -4,13 +4,13 @@ package AuthenticationAndPanels;
 import java.util.Scanner;
 import Calculation.BMIBMRcalculator;
 import Calculation.FoodCaloryCalculator;
-
+import MainProgramme.ServiceHandler;
 public class GeneralPanel {
     private Scanner scanner = new Scanner(System.in);
 
     public void showGeneralServices() {
         while (true) {
-            clearScreen();
+            ServiceHandler.clearScreen();
             System.out.println("Welcome to General Services!");
             System.out.println("Choose an option:");
             System.out.println("1. Calculate BMI and BMR");
@@ -38,7 +38,7 @@ public class GeneralPanel {
     }
 
     private void calculateBMIAndBMR() {
-        clearScreen();
+        ServiceHandler.clearScreen();
 
         System.out.print("Enter your weight (kg): ");
         double weight = scanner.nextDouble();
@@ -80,7 +80,7 @@ public class GeneralPanel {
 
 
     private void calculateFoodCalories() {
-        clearScreen();
+        ServiceHandler.clearScreen();
         System.out.print("Enter the food item (e.g., 'White Rice'): ");
         String foodItem = scanner.nextLine();
         System.out.print("Enter the quantity in grams: ");
@@ -117,11 +117,6 @@ public class GeneralPanel {
     }
 
 
-    private void clearScreen() {
-        for (int i = 0; i < 5; i++) {
-            System.out.println();
-        }
-    }
 
 
     private void pause() {
