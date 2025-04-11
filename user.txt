@@ -19,3 +19,4 @@ me,me
 wow,wow
 babu,babu
 monon,monon
+wahid,wahhid

@@ -15,7 +15,7 @@ public class ServiceHandler {
 
     public void start() {
         while (true) {
-            clearScreen();
+
             System.out.println("Welcome to Savour the Flavor of Life!\nChoose an option:");
             System.out.println("1. Individual Service");
             System.out.println("2. General Service");
@@ -100,10 +100,14 @@ public class ServiceHandler {
         }
     }
 
+
     private void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        for (int i = 0; i < 5; i++) {
+            System.out.println();
+        }
     }
+
+
 
     private void pause() {
         System.out.println("\nPress Enter to continue...");
