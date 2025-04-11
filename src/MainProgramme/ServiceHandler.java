@@ -5,7 +5,7 @@ package MainProgramme;
 
 import AuthenticationAndPanels.GeneralPanel;
 import java.util.Scanner;
-import AuthenticationAndPanels.LoginPanel;
+import AuthenticationAndPanels.PersonalPanel;
 import AuthenticationAndPanels.Authentication;
 
 public class ServiceHandler {
@@ -93,7 +93,7 @@ public class ServiceHandler {
 
         if (auth.login(username, password)) {
             System.out.println("Login successful!");
-            LoginPanel loginPanel = new LoginPanel(username);
+            PersonalPanel loginPanel = new PersonalPanel(username);
             loginPanel.showPanel();
         } else {
             System.out.println("Invalid credentials.");

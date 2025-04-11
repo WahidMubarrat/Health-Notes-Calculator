@@ -6,11 +6,10 @@ import java.util.Scanner;
 import PersonalDataTracker.StepTracker;
 import PersonalDataTracker.WaterIntake;
 import PersonalDataTracker.HealthMetrics;
-import PersonalDataTracker.Tracker;
 import Calculation.SleepTracker;
 import Calculation.WorkOutTracker;
 
-public class LoginPanel {
+public class PersonalPanel {
     private Scanner scanner = new Scanner(System.in);
     private boolean isLoggedIn;
     private String loggedInUser;
@@ -20,7 +19,7 @@ public class LoginPanel {
     private WaterIntake waterIntakeTracker;
     private HealthMetrics healthMetricsTracker;
 
-    public LoginPanel(String loggedInUser) {
+    public PersonalPanel(String loggedInUser) {
         this.loggedInUser = loggedInUser;
         this.isLoggedIn = true;
         this.sleepTracker = new SleepTracker(loggedInUser);
@@ -33,7 +32,7 @@ public class LoginPanel {
     public void showPanel() {
         while (isLoggedIn) {
             clearScreen();
-            System.out.println("===== Login Panel =====");
+            System.out.println("===== Personal Panel =====");
             System.out.println("Welcome, " + loggedInUser + "!");
             System.out.println("Choose an option:");
             System.out.println("1. Track Health Metrics");
