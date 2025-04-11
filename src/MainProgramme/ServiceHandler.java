@@ -10,7 +10,7 @@ import AuthenticationAndPanels.Authentication;
 
 public class ServiceHandler {
     private Authentication auth = new Authentication();
-    private Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
     private GeneralPanel generalPanel = new GeneralPanel();
 
     public void start() {
@@ -109,7 +109,7 @@ public class ServiceHandler {
 
 
 
-   public  void pause() {
+   public static void pause() {
         System.out.println("\nPress Enter to continue...");
         scanner.nextLine();
     }

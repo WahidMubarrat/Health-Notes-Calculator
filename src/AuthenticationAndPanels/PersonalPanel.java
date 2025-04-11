@@ -67,7 +67,7 @@ public class PersonalPanel {
                     break;
                 default:
                     System.out.println("Invalid choice. Please try again.");
-                    pause();
+                    ServiceHandler.pause();
             }
         }
     }
@@ -102,7 +102,7 @@ public class PersonalPanel {
             default:
                 System.out.println("Invalid choice.");
         }
-        pause();
+        ServiceHandler.pause();
     }
 
     private void trackWaterIntake() {
@@ -127,7 +127,7 @@ public class PersonalPanel {
             default:
                 System.out.println("Invalid choice.");
         }
-        pause();
+        ServiceHandler.pause();
     }
 
     private void trackSteps() {
@@ -152,7 +152,7 @@ public class PersonalPanel {
             default:
                 System.out.println("Invalid choice.");
         }
-        pause();
+        ServiceHandler.pause();
     }
 
     private void trackWorkout() {
@@ -178,7 +178,7 @@ public class PersonalPanel {
             default:
                 System.out.println("Invalid choice.");
         }
-        pause();
+        ServiceHandler.pause();
     }
 
     private void trackHealthMetrics() {
@@ -208,16 +208,13 @@ public class PersonalPanel {
             default:
                 System.out.println("Invalid choice.");
         }
-        pause();
+       ServiceHandler.pause();
     }
 
 
 
 
-    private void pause() {
-        System.out.println("\nPress Enter to continue...");
-        scanner.nextLine();
-    }
+
 }
 
 

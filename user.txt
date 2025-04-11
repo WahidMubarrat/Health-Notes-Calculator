@@ -21,3 +21,4 @@ babu,babu
 monon,monon
 wahid,wahhid
 ami,ami
+a,a
