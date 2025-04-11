@@ -32,7 +32,7 @@ public class GeneralPanel {
                     return;
                 default:
                     System.out.println("Invalid choice. Please try again.");
-                    pause();
+                    ServiceHandler.pause();
             }
         }
     }
@@ -74,7 +74,7 @@ public class GeneralPanel {
         System.out.println(" │");
         System.out.println("└──────────────────────────────────────────┘");
 
-        pause();
+        ServiceHandler.pause();
     }
 
 
@@ -113,16 +113,13 @@ public class GeneralPanel {
             System.out.println(" │");
             System.out.println("└──────────────────────────────────────────┘");
         }
-        pause();
+        ServiceHandler.pause();
     }
 
 
 
 
-    private void pause() {
-        System.out.println("\nPress Enter to continue...");
-        scanner.nextLine();
-    }
+
 }
 
 
