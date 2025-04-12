@@ -17,6 +17,8 @@ public class ServiceHandler {
         while (true) {
 
             System.out.println("Welcome to Savour the Flavor of Life!\nChoose an option:");
+
+
             System.out.println("1. Individual Service");
             System.out.println("2. General Service");
             System.out.println("3. Exit");
