@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Savour the Flavour of Health.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Health Notes &amp; Calculator.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainProgramme/ServiceHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainProgramme/ServiceHandler.java" afterDir="false" />
-    </list>
+    <list default="true" id="60ed8e49-47d4-445a-a2cf-57c6d43672fd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -194,6 +190,7 @@
       <workItem from="1744377121526" duration="435000" />
       <workItem from="1744377591563" duration="4542000" />
       <workItem from="1744445917031" duration="1603000" />
+      <workItem from="1744466840752" duration="246000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,7 @@ public class ServiceHandler {
     public void start() {
         while (true) {
 
-            System.out.println("Welcome to Savour the Flavor of Life!\nChoose an option:");
+            System.out.println("Welcome to Health Notes & Calculator!\nChoose an option:");
 
 
             System.out.println("1. Individual Service");
