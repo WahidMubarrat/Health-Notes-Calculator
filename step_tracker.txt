@@ -9,3 +9,5 @@ monon,2025-03-30,111 steps
 wahid,2025-04-11,10000 steps
 ami,2025-04-11,1 steps
 a,2025-04-11,1 steps
+t2,2025-04-13,1000 steps
+monon,2025-04-14,1000 steps
